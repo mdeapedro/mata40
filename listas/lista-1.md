@@ -1,4 +1,4 @@
-*Obs.: Neste momento, evite usar funções existentes para resolução das questões*
+ *Obs.: Neste momento, evite usar funções existentes para resolução das questões*
 
 # Questões
 
@@ -54,11 +54,21 @@
 6. Escreva uma função chamada inteiros que recebe um número inteiro positivo x e retorne a soma de todos os inteiros positivos entre 1 e x.
     
     ```python
+    def inteiros(x):
+        return x*(x+1)/2
     ```
     
 7. Escreva uma função chamada fibonacci que receba um número e retorne a soma da sua sequência de Fibonacci.
     
     ```python
+    def fibonacci(x):
+        sum = 0
+        last = 0
+        curr = 1
+        for i in range(x):
+            sum += curr
+            last, curr = curr, last + curr
+        return sum
     ```
     
 8. Se listarmos todos os números naturais abaixo de 10 que são múltiplos de 3 ou 5, temos 3, 5, 6, 9, cuja soma é 23. Escreva uma função chamada multiplos que recebe um número y e retorna a soma de todos os múltiplos de 3 e 5 abaixo desse número y.
