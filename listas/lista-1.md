@@ -74,6 +74,31 @@
 8. Se listarmos todos os números naturais abaixo de 10 que são múltiplos de 3 ou 5, temos 3, 5, 6, 9, cuja soma é 23. Escreva uma função chamada multiplos que recebe um número y e retorna a soma de todos os múltiplos de 3 e 5 abaixo desse número y.
     
     ```python
+    def multiplos(x):
+        sum = 0
+        i = 0
+        while (true):
+            i += 3
+            if (i >= x): break
+            sum += i
+            i += 2
+            if (i >= x): break
+            sum += i
+            i += 1
+            if (i >= x): break
+            sum += i
+            i += 3
+            if (i >= x): break
+            sum += i
+            i += 1
+            if (i >= x): break
+            sum += i
+            i += 2
+            if (i >= x): break
+            sum += i
+            i += 3
+            if (i >= x): break
+            sum += i
     ```
     
 9. Escreva uma função chamada maior que recebe um vetor e retorna o maior valor dentre os elementos do vetor.
