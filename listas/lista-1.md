@@ -99,6 +99,7 @@
             i += 3
             if (i >= x): break
             sum += i
+        return sum
     ```
     
 9. Escreva uma função chamada maior que recebe um vetor e retorna o maior valor dentre os elementos do vetor.
