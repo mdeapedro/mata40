@@ -128,7 +128,7 @@
     def media(v):
         sum = 0
         for vi in v: sum += vi
-    return sum/len(v)
+        return sum/len(v)
     ```
     
 12. Escreva uma função chamada somamatriz que recebe uma matriz e soma todos os elementos da matriz.
