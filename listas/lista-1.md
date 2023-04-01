@@ -77,7 +77,7 @@
     def multiplos(x):
         sum = 0
         i = 0
-        while (true):
+        while (True):
             i += 3
             if (i >= x): break
             sum += i
