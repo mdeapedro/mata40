@@ -105,16 +105,30 @@
 9. Escreva uma função chamada maior que recebe um vetor e retorna o maior valor dentre os elementos do vetor.
     
     ```python
+    def maior(v):
+        r = v[0]
+        for i in range(1, len(v)):
+            if (v[i] > r): r = v[i]
+        return r
     ```
     
-10. Escreva uma função chamada menor que recebe um vetor e retorna o maior valor dentre os elementos do vetor.
+10. Escreva uma função chamada menor que recebe um vetor e retorna o menor valor dentre os elementos do vetor.
     
     ```python
+    def menor(v):
+        r = v[0]
+        for i in range(1, len(v)):
+            if (v[i] < r): r = v[i]
+        return r
     ```
     
 11. Escreva uma função chamada media que recebe um vetor e retorna sua média.
     
     ```python
+    def media(v):
+        sum = 0
+        for vi in v: sum += vi
+    return sum/len(v)
     ```
     
 12. Escreva uma função chamada somamatriz que recebe uma matriz e soma todos os elementos da matriz.
